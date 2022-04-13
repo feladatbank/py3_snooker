@@ -40,3 +40,21 @@ Minta output:________________________________________________
 _____________________________________________________________
 """
 
+'''Helyezes;Nev;Orszag;Nyeremeny'''
+
+
+class Snooker:
+    def __init__(self,sor):
+        sor = sor.strip().replace(".",",").split(";")
+        self.Helyezes = int(sor[0])
+        self.nev = str(sor[1])
+        self.orszag = str(sor[2])
+        self.nyer = int(sor[3])
+
+#1-2.feladat:_________________________________________________________________________________
+
+with open("snooker.txt","r",encoding="latin2") as f:
+    elsosor= f.readline()
+    lista = [Snooker(sor) for sor in f]
+    
+        
