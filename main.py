@@ -61,3 +61,13 @@ with open("snooker.txt","r",encoding="latin2") as f:
 
 print(f"3.feladat: A világranglistán {len(lista)} versenyző szerepel")
 
+#4.feladat:_________________________________________________________________________________
+
+ossz = [ sor.nyer for sor in lista ]
+atlag = sum(ossz)
+atlag2 = atlag / len(ossz)
+
+print(f"4.feladat: A versenyzok átlagosan {atlag2:.2f} fontot kerestek")
+
+
+
