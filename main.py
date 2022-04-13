@@ -57,4 +57,7 @@ with open("snooker.txt","r",encoding="latin2") as f:
     elsosor= f.readline()
     lista = [Snooker(sor) for sor in f]
     
-        
+#3.feladat:_________________________________________________________________________________
+
+print(f"3.feladat: A világranglistán {len(lista)} versenyző szerepel")
+
