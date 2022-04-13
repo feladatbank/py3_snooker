@@ -69,5 +69,20 @@ atlag2 = atlag / len(ossz)
 
 print(f"4.feladat: A versenyzok átlagosan {atlag2:.2f} fontot kerestek")
 
+#5.feladat:_________________________________________________________________________________
+
+kinaiak = [(sor.nyer,sor )for sor in lista if sor.orszag == "Kína"]
+kinaiak2, adatok = max(kinaiak)
+forint = kinaiak2 * 380
+
+print("5.feladat:lejobban kereső kinai játékos:")
+print(f'''            helyezés: {adatok.Helyezes}
+            Név: {adatok.nev}
+            Ország: {adatok.orszag}
+            nyeremény: {adatok.nyer}
+            Nyeremény összege: {forint} Ft''')
+
+
+
 
 
