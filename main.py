@@ -82,6 +82,15 @@ print(f'''            helyezés: {adatok.Helyezes}
             nyeremény: {adatok.nyer}
             Nyeremény összege: {forint} Ft''')
 
+#6.feladat:_________________________________________________________________________________
+norveg = [sor for sor in lista if sor.orszag == "Norvégia"]
+
+if len(norveg) > 0:
+    print(f'6. feladat: A versenyzők között van norvég versenyző.')
+else:
+    print(f'6. feladat: A versenyzők között nincs norvég versenyző.')
+
+
 
 
 
